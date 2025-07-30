@@ -1,0 +1,21 @@
+name: Run Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check script syntax
+        run: bash -n ./script.sh
+
+      - name: Run the script
+        run: bash ./script.sh
+
