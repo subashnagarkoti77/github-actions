@@ -1,0 +1,18 @@
+A merge conflict happens when Git tries to combine changes from two different branches (or commits)
+ but cannot automatically figure out how to merge them because the changes overlap or contradict each other.
+
+This usually occurs when:
+
+Two people edit the same line in a file.
+One person deletes a file while another person edits it.
+Changes in one branch conflict with changes in another branch.
+How to Resolve a Merge Conflict?
+Open the conflicted file(s).
+Look for the conflict markers (<<<<<<<, =======, >>>>>>>).
+Decide which changes to keep:
+Your changes (above =======)
+Incoming changes (below =======)
+Or merge both manually.
+Remove the conflict markers.
+Save the file.
+
